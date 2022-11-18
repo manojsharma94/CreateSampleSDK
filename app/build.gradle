@@ -3,9 +3,16 @@ plugins {
 }
 
 android {
+
     namespace 'com.kot.createsamplesdk'
     compileSdk 32
+    publishing {
+        singleVariant('release') {
+            withSourcesJar()
+            withJavadocJar()
+        }
 
+    }
     defaultConfig {
         applicationId "com.kot.createsamplesdk"
         minSdk 21
@@ -26,6 +33,7 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+
 }
 
 dependencies {
