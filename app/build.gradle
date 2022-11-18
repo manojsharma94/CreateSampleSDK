@@ -37,5 +37,7 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
-    api project(path: ':samplesdk')
+    implementation 'com.github.manojsharma94:Sam:1.05'
+    implementation 'com.github.manojsharma94:CreateSampleSDK:1.0'
+    //api project(path: ':samplesdk')
 }
